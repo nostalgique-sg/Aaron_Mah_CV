@@ -714,6 +714,12 @@ const cardEls = DATA.works.map((w,i) => {
 
   const imgs = (w.images && w.images.length) ? w.images : [];
   if (imgs.length > 0) {
+    // num overlay first — before any event listeners
+    const numOverlay = document.createElement('div');
+    numOverlay.className = 'pf-card-num-overlay';
+    numOverlay.textContent = `${w.num} / 0${N}`;
+    visual.appendChild(numOverlay);
+
     imgs.forEach((src, idx) => {
       const img = document.createElement('img');
       img.src = src; img.alt = w.name; img.loading = 'lazy';
@@ -721,15 +727,15 @@ const cardEls = DATA.works.map((w,i) => {
       visual.appendChild(img);
     });
     if (imgs.length > 1) {
-      // arrows
       const prev = document.createElement('button');
-      prev.className = 'pf-arrow prev'; prev.innerHTML = '‹';
+      prev.className = 'pf-arrow prev'; prev.innerHTML = '&#8249;';
       prev.setAttribute('aria-label','Previous image');
       const next = document.createElement('button');
-      next.className = 'pf-arrow next'; next.innerHTML = '›';
+      next.className = 'pf-arrow next'; next.innerHTML = '&#8250;';
       next.setAttribute('aria-label','Next image');
-      visual.appendChild(prev); visual.appendChild(next);
-      // dots
+      visual.appendChild(prev);
+      visual.appendChild(next);
+
       const dotsEl = document.createElement('div');
       dotsEl.className = 'pf-img-dots';
       imgs.forEach((_,idx) => {
@@ -738,7 +744,7 @@ const cardEls = DATA.works.map((w,i) => {
         dotsEl.appendChild(dot);
       });
       visual.appendChild(dotsEl);
-      // carousel logic
+
       let cur = 0;
       const allImgEls = visual.querySelectorAll('img');
       const allDotEls = dotsEl.querySelectorAll('.pf-img-dot');
@@ -749,13 +755,16 @@ const cardEls = DATA.works.map((w,i) => {
         allImgEls[cur].classList.remove('hidden');
         allDotEls[cur].classList.add('active');
       };
-      prev.addEventListener('click', e => { e.stopPropagation(); go(cur-1); });
-      next.addEventListener('click', e => { e.stopPropagation(); go(cur+1); });
+      prev.addEventListener('click', e => { e.stopPropagation(); go(cur - 1); });
+      next.addEventListener('click', e => { e.stopPropagation(); go(cur + 1); });
     }
   } else {
-    visual.innerHTML = '<div class="pf-card-no-img"><span>Photo coming soon</span></div>';
+    const numOverlay = document.createElement('div');
+    numOverlay.className = 'pf-card-num-overlay';
+    numOverlay.textContent = `${w.num} / 0${N}`;
+    visual.appendChild(numOverlay);
+    visual.innerHTML += '<div class="pf-card-no-img"><span>Photo coming soon</span></div>';
   }
-  visual.innerHTML += `<div class="pf-card-num-overlay">${w.num} / 0${N}</div>`;
   card.appendChild(visual);
 
   // info
