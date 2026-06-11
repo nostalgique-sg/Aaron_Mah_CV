@@ -3,81 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Aaron Mah — Industrial & Product Designer | Singapore</title>
-
-<!-- SEO Meta -->
-<meta name="description" content="Aaron Mah (Mah Kai Ming) — Singaporean Industrial & Product Designer. Founder of Studio Nostalgique, a Singapore-based studio turning local childhood nostalgia into 3D-printed lamps. Specialising in adhesive-free assembly, 3D modelling, and product design. BA (Hons) Product Design, LASALLE College of the Arts 2025."/>
-<meta name="keywords" content="Aaron Mah, Mah Kai Ming, industrial designer Singapore, product designer Singapore, Studio Nostalgique, adhesive-free design, 3D printing design, LASALLE product design, Singapore designer, lamp design Singapore"/>
-<meta name="author" content="Mah Kai Ming, Aaron"/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://nostalgique-sg.github.io/Aaron_Mah_CV/"/>
-
-<!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://nostalgique-sg.github.io/Aaron_Mah_CV/"/>
-<meta property="og:title" content="Aaron Mah — Industrial & Product Designer | Singapore"/>
-<meta property="og:description" content="Singaporean Industrial & Product Designer and founder of Studio Nostalgique — turning local childhood icons like gem biscuits, kueh tutu, and playgrounds into 3D-printed lamps. Designs that hold together without a single drop of adhesive."/>
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/nostalgique-sg/nostalgique-assets/squid-lamp-final-photos.jpg"/>
-<meta property="og:locale" content="en_SG"/>
-<meta property="og:site_name" content="Aaron Mah — Portfolio"/>
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Aaron Mah — Industrial & Product Designer | Singapore"/>
-<meta name="twitter:description" content="Singaporean Industrial & Product Designer. Founder of Studio Nostalgique — turning local childhood nostalgia into 3D-printed lamps."/>
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/nostalgique-sg/nostalgique-assets/squid-lamp-final-photos.jpg"/>
-
-<!-- Structured Data: Person + Organization -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Aaron Mah",
-  "alternateName": "Mah Kai Ming",
-  "jobTitle": "Industrial & Product Designer",
-  "description": "Singaporean Industrial and Product Designer. Founder of Studio Nostalgique — a Singapore-based studio translating local childhood icons into 3D-printed lamps. Specialising in adhesive-free assembly, 3D modelling, and product design.",
-  "nationality": {
-    "@type": "Country",
-    "name": "Singapore"
-  },
-  "url": "https://nostalgique-sg.github.io/Aaron_Mah_CV/",
-  "email": "aaronmah7008@gmail.com",
-  "telephone": "+6597387008",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "SG",
-    "addressLocality": "Singapore"
-  },
-  "alumniOf": [
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "LASALLE College of the Arts",
-      "address": { "@type": "PostalAddress", "addressLocality": "Singapore" }
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Nanyang Polytechnic",
-      "address": { "@type": "PostalAddress", "addressLocality": "Singapore" }
-    }
-  ],
-  "knowsAbout": ["Industrial Design", "Product Design", "3D Printing", "Rhino 3D", "Adhesive-free construction", "Paper Engineering", "Woodworking Joinery"],
-  "sameAs": ["https://www.instagram.com/studio_nostalgique/"]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Studio Nostalgique",
-  "founder": { "@type": "Person", "name": "Aaron Mah" },
-  "foundingDate": "2025",
-  "description": "Independent design studio creating original 3D-printed lamps inspired by Singaporean childhood nostalgia. Every lamp designed from scratch — no stock models.",
-  "url": "https://www.instagram.com/studio_nostalgique/",
-  "address": { "@type": "PostalAddress", "addressCountry": "SG", "addressLocality": "Singapore" },
-  "sameAs": ["https://www.instagram.com/studio_nostalgique/"]
-}
-</script>
-
+<title>Aaron Mah — Industrial & Product Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
@@ -124,6 +50,15 @@ nav.scrolled{background:var(--bg);border-bottom:1px solid var(--rule)}
 section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;background:var(--bg)}
 .section-inner{display:grid;grid-template-columns:200px 1fr;gap:64px;max-width:1100px}
 .section-label{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);padding-top:6px}
+
+.cv-download-btn{
+  display:inline-flex;align-items:center;gap:6px;margin-top:8px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--bg)!important;background:var(--accent);
+  padding:8px 16px;text-decoration:none!important;
+  transition:opacity .2s;
+}
+.cv-download-btn:hover{opacity:.85}
 
 /* ABOUT */
 .philosophy-text{font-size:clamp(20px,2.6vw,30px);font-weight:400;line-height:1.5;letter-spacing:-.01em}
@@ -176,11 +111,15 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
 .ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:2px}
 .ig-slot{background:#161614;overflow:hidden;max-height:420px}
 .ig-slot blockquote{margin:0!important}
+/* force embeds to not exceed container */
 .ig-slot iframe{max-width:100%!important}
 .ig-setup-note{grid-column:1/-1;margin-top:16px;padding:16px 20px;border:1px solid #2e2e2a;background:#111;font-family:var(--mono);font-size:10px;color:#5a5a52;line-height:1.9}
 .ig-setup-note strong{color:#8a8a82}
 
-/* PORTFOLIO */
+/* PORTFOLIO — GSAP SCROLL-SCALE
+   KEY FIX: section has its own stacking context but does NOT
+   set overflow:hidden — that was clipping the sticky cards.
+   The track height + GSAP pinSpacing handles spacing correctly. */
 #portfolio{
   background:var(--dark);color:var(--dark-fg);
   border-top:none;padding:0;
@@ -198,24 +137,31 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
 .pf-stat-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#5a5a52;margin-top:4px}
 .pf-scroll-hint{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#4a4a42;margin-top:32px}
 .pf-scroll-hint::before{content:'';width:32px;height:1px;background:#4a4a42}
+
+/* scroll track — height set by JS */
 .pf-track{position:relative}
 .pf-sticky{
   position:sticky;top:0;height:100vh;
   display:flex;align-items:center;justify-content:center;
+  /* no overflow:hidden — that caused bleed */
   z-index:1;
 }
+
+/* CARD */
 .pf-card{
   position:absolute;
   width:min(1040px,92vw);
   height:min(560px,78vh);
   display:grid;
-  grid-template-columns:55% 45%;
+  grid-template-columns:55% 45%; /* more room for image */
   overflow:hidden;
   border-radius:6px;
   transform:scale(.88);opacity:0;
   will-change:transform,opacity;
   box-shadow:0 32px 80px rgba(0,0,0,.5);
 }
+
+/* image side — carousel */
 .pf-card-visual{position:relative;overflow:hidden;background:#111;cursor:pointer}
 .pf-card-visual img{
   position:absolute;inset:0;width:100%;height:100%;
@@ -223,6 +169,7 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
   transition:opacity .4s ease;
 }
 .pf-card-visual img.hidden{opacity:0;pointer-events:none}
+/* next/prev arrows */
 .pf-arrow{
   position:absolute;top:50%;transform:translateY(-50%);
   z-index:5;background:rgba(0,0,0,.45);border:none;cursor:pointer;
@@ -233,6 +180,7 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
 .pf-card-visual:hover .pf-arrow{opacity:1}
 .pf-arrow.prev{left:12px}
 .pf-arrow.next{right:12px}
+/* image dots */
 .pf-img-dots{
   position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
   display:flex;gap:5px;z-index:5;
@@ -240,6 +188,8 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
 .pf-img-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.3);transition:background .2s}
 .pf-img-dot.active{background:#fff}
 .pf-card-num-overlay{position:absolute;bottom:14px;left:16px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:rgba(255,255,255,.25);z-index:2}
+
+/* info side */
 .pf-card-info{
   background:#1e1e1b;
   padding:36px 36px 32px;
@@ -258,10 +208,14 @@ section{padding:96px 48px;border-top:1px solid var(--rule);position:relative;bac
 .pf-card-skills{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
 .pf-skill-chip{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#6a6a62;border:1px solid #2e2e2a;padding:3px 8px;transition:border-color .2s,color .2s;cursor:default}
 .pf-skill-chip:hover{border-color:var(--accent);color:var(--accent)}
+
+/* progress + counter */
 .pf-progress{position:absolute;bottom:24px;display:flex;gap:8px;align-items:center;z-index:10}
 .pf-dot{width:6px;height:6px;border-radius:50%;background:#3a3a36;transition:background .3s,transform .3s}
 .pf-dot.active{background:var(--accent);transform:scale(1.4)}
 .pf-counter{position:absolute;top:24px;right:28px;z-index:10;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:#4a4a42}
+
+/* skills footer */
 .pf-footer{
   padding:48px 48px 80px;border-top:1px solid #2e2e2a;max-width:1100px;
   position:relative;z-index:2;background:var(--dark);
@@ -361,7 +315,7 @@ footer{position:relative;z-index:10;background:var(--bg);border-top:1px solid va
 </nav>
 
 <section id="hero">
-  <p class="hero-eyebrow">Singaporean Industrial &amp; Product Designer</p>
+  <p class="hero-eyebrow">Industrial &amp; Product Designer — Singapore</p>
   <div class="hero-studio-pill">
     <span class="pill-dot"></span>
     <span>Founder · <a href="#studio">Studio Nostalgique</a></span>
@@ -369,13 +323,15 @@ footer{position:relative;z-index:10;background:var(--bg);border-top:1px solid va
   <h1 class="hero-name">Mah<br/>Kai Ming,<br/><em>Aaron</em></h1>
   <div class="hero-bottom">
     <p class="hero-philosophy">
-      Designing products that hold together without a single drop of adhesive.
-      Working in paper, cardboard, wood, and 3D print — where the material
-      is the mechanism. Building objects that make you remember.
+      An innovative Industrial/Product Designer curious about how things work.
+      Skilled at transforming concepts into tangible products through conceptualising,
+      3D-modelling, prototyping, and visual storytelling. Founder of Studio Nostalgique
+      and WhatTheFlipbooks.
     </p>
     <div class="hero-contact">
       <a href="tel:+6597387008">+65 9738 7008</a><br/>
-      <a href="mailto:aaronmah7008@gmail.com">aaronmah7008@gmail.com</a>
+      <a href="mailto:aaronmah7008@gmail.com">aaronmah7008@gmail.com</a><br/>
+      <a class="cv-download-btn" href="https://cdn.jsdelivr.net/gh/nostalgique-sg/nostalgique-assets/Resume_2026.pdf" target="_blank" download>↓ Download CV</a>
     </div>
   </div>
 </section>
@@ -384,12 +340,12 @@ footer{position:relative;z-index:10;background:var(--bg);border-top:1px solid va
   <div class="section-inner">
     <span class="section-label reveal">About</span>
     <p class="philosophy-text reveal">
-      An Industrial/Product designer whose practice centres on
-      <strong>adhesive-free assembly</strong> — structures that hold through
-      geometry, fold, and joinery alone. Proficient in conceptualising,
-      creating visuals, <strong>3D modelling</strong>, and renderings that
-      communicate a design. Founder of a <strong>self-built design studio</strong>
-      launched in under six months. Always learning the skills the field demands next.
+      An innovative Industrial/Product Designer curious about how things work. Skilled at
+      transforming concepts into tangible products through <strong>conceptualising, 3D-modelling,
+      prototyping, and visual storytelling</strong>. Adept at working with various materials with a
+      proven ability to produce functional yet aesthetically pleasing products. Founder of
+      <strong>Studio Nostalgique</strong> and <strong>WhatTheFlipbooks</strong> — ever committed to
+      continuous learning to stay ahead of evolving design trends.
     </p>
   </div>
 </section>
@@ -500,7 +456,11 @@ footer{position:relative;z-index:10;background:var(--bg);border-top:1px solid va
 <div id="modals"></div>
 
 <script>
+// =================================================================
+//  ✏️  CONTENT — edit everything here.
+// =================================================================
 const DATA = {
+
   experience: [
     {
       role: "Founder & Designer",
@@ -510,9 +470,22 @@ const DATA = {
       link: "https://www.instagram.com/studio_nostalgique/",
       linkLabel: "@studio_nostalgique",
       bullets: [
-        "Conceived, designed, and launched an independent 3D-printed lamp studio from scratch in under 6 months — brand, product design, fabrication, and fulfilment.",
-        "3D-models every lamp entirely from scratch in Rhino 3D; no stock models. Subjects drawn from shared Singaporean childhood memory: gem biscuits, kueh tutu, white rabbit candy, playgrounds.",
-        "Applies print engineering as a design tool — the Dragon Playground Lamp's surface detail is generated entirely through infill and support settings, not modelled geometry.",
+        "Founded a design-led lifestyle brand inspired by Singapore's culture and the concept of nostalgia — creating 3D-printed lamps that replicate iconic cultural snacks and landmarks.",
+        "Led end-to-end product development: concept ideation, 3D-modelling, prototyping, slicer engineering, in-house production, packaging design, photography, social media marketing, order management, and fulfilment.",
+        "Designed brand logo and identity, ensuring consistent visuals across all products and platforms.",
+        "Developed costing, pricing, and margin models covering filament usage, print time, packaging, and logistics.",
+        "Continuously iterated products and packaging based on customer feedback and sales data, refining form, finish, and lighting effects.",
+      ],
+    },
+    {
+      role: "Founder",
+      company: "WhatTheFlipbooks",
+      date: "2025",
+      location: "Singapore",
+      bullets: [
+        "Founded and managed a small-batch flipbook business dedicated to handmade flipbooks.",
+        "Designed and optimised the end-to-end process from videos received to completed flipbooks.",
+        "Managed customer orders from inquiry to fulfilment, maintaining consistent quality and timely deliveries.",
       ],
     },
     {
@@ -521,8 +494,8 @@ const DATA = {
       date: "2024",
       location: "Singapore",
       bullets: [
-        "Learnt to use woodworking tools not taught in formal education, expanding hands-on fabrication capabilities.",
-        "Explored and applied various woodworking joineries, deepening understanding of adhesive-free structural assembly.",
+        "Operated professional woodworking tools not taught in formal education, expanding hands-on fabrication capabilities.",
+        "Learnt and applied advanced joinery techniques, deepening understanding of adhesive-free structural assembly.",
       ],
     },
     {
@@ -531,9 +504,8 @@ const DATA = {
       date: "2017",
       location: "Singapore",
       bullets: [
-        "Learnt a specialist 3D software dedicated to folding cardboards of varying thickness.",
-        "Calculated tolerances for cardboards of different thickness to achieve precise, clean folds.",
-        "Assisted with event setup and teardown, developing site-production and logistics experience.",
+        "Mastered specialised 3D software dedicated to folding cardboards of varying thickness.",
+        "Supported event operations — setup, coordination, and teardown.",
       ],
     },
   ],
@@ -645,6 +617,7 @@ const DATA = {
     },
   ],
 
+  // Add Instagram post URLs here (copy link from desktop browser)
   studio: {
     lamps: [
       "Gem Biscuit Lamp OG","Gem Biscuit Lamp Wireless XL",
@@ -662,35 +635,43 @@ const DATA = {
   },
 
   allSkills: [
-    "Rhino 3D","Keyshot","3D Printing","Adobe Illustrator",
-    "Adobe Photoshop","Adobe Premiere Pro","Microsoft PowerPoint",
-    "Paper Engineering","Cardboard Construction","Woodworking Joinery",
-    "Inclusive Design","Healthcare Design","Sustainable Materials",
-    "Biomimicry","Mechanical Design","Zero-Adhesive Construction",
+    "Rhino 3D", "Keyshot", "Adobe Illustrator", "Adobe Photoshop",
+    "3D Printing", "CNC Techniques", "Wood Joinery", "Cardboard Engineering", "Manual Bookbinding",
+    "Concept Ideation", "Product Rendering", "User-Centric Storytelling", "Portfolio Presentation",
+    "Small Business Management", "Social Media Marketing", "Event Participation",
+    "Inclusive Design", "Healthcare Design", "Sustainable Materials", "Biomimicry", "Zero-Adhesive Construction",
   ],
 
   education: [
-    {degree:"BA (Hons) in Product Design", school:"LASALLE College of the Arts", location:"Singapore", year:"2025"},
-    {degree:"Diploma in Industrial Design", school:"Nanyang Polytechnic", location:"Singapore", year:"2018"},
+    {degree:"BA (Hons) in Product Design", school:"LASALLE College of the Arts", location:"Singapore", year:"2023–2025"},
+    {degree:"Diploma in Industrial Design", school:"Nanyang Polytechnic", location:"Singapore", year:"2015–2017"},
   ],
 
   skills: [
-    "Rhino 3D","Keyshot","Adobe Illustrator","Adobe Photoshop",
-    "Adobe Premiere Pro","Microsoft PowerPoint",
-    "3D Printing","Paper & Cardboard","Woodworking Joinery",
+    "Rhino 3D", "Keyshot", "Adobe Illustrator", "Adobe Photoshop",
+    "3D Printing", "CNC Techniques", "Wood Joinery",
+    "Cardboard Engineering", "Manual Bookbinding",
+    "Concept Ideation", "Product Rendering", "User-Centric Storytelling",
+    "Small Business Management", "Social Media Marketing", "Event Participation",
   ],
 };
+// =================================================================
+//  END OF EDITABLE CONTENT
+// =================================================================
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Lenis
 const lenis = new Lenis({duration:1.25, easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
 lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add(time => lenis.raf(time*1000));
 gsap.ticker.lagSmoothing(0);
 
+// Nav
 const mainNav = document.getElementById('main-nav');
 ScrollTrigger.create({start:'top -60', onUpdate:s=>mainNav.classList.toggle('scrolled',s.progress>0)});
 
+// Experience
 const expList = document.getElementById('exp-list');
 DATA.experience.forEach(item => {
   const el = document.createElement('div');
@@ -702,9 +683,11 @@ DATA.experience.forEach(item => {
   expList.appendChild(el);
 });
 
+// Studio lamps
 document.getElementById('sn-lamp-chips').innerHTML =
   DATA.studio.lamps.map(l=>`<span class="studio-lamp-chip">${l}</span>`).join('');
 
+// Instagram embeds
 const igGrid = document.getElementById('ig-grid');
 if (DATA.studio.igPosts.length === 0) {
   igGrid.innerHTML = `<div class="ig-setup-note" style="grid-column:1/-1"><strong>To show Instagram posts:</strong><br>1. Open a post on @studio_nostalgique on desktop → click ··· → Copy link<br>2. Paste URL into igPosts: [] above → re-upload this file.</div>`;
@@ -725,6 +708,7 @@ if (DATA.studio.igPosts.length === 0) {
   }
 }
 
+// GSAP portfolio
 const track    = document.getElementById('pf-track');
 const sticky   = document.getElementById('pf-sticky');
 const counter  = document.getElementById('pf-counter');
@@ -735,6 +719,7 @@ const STEP = 750;
 
 track.style.height = (N * STEP + window.innerHeight) + 'px';
 
+// progress dots
 DATA.works.forEach((_,i) => {
   const d = document.createElement('div');
   d.className = 'pf-dot' + (i===0?' active':'');
@@ -747,12 +732,14 @@ const cardEls = DATA.works.map((w,i) => {
   const card = document.createElement('div');
   card.className = 'pf-card';
 
+  // visual with carousel
   const visual = document.createElement('div');
   visual.className = 'pf-card-visual';
   visual.style.background = BG[i];
 
   const imgs = (w.images && w.images.length) ? w.images : [];
   if (imgs.length > 0) {
+    // num overlay first — before any event listeners
     const numOverlay = document.createElement('div');
     numOverlay.className = 'pf-card-num-overlay';
     numOverlay.textContent = `${w.num} / 0${N}`;
@@ -805,6 +792,7 @@ const cardEls = DATA.works.map((w,i) => {
   }
   card.appendChild(visual);
 
+  // info
   const info = document.createElement('div');
   info.className = 'pf-card-info';
   info.innerHTML = `
@@ -826,6 +814,7 @@ const cardEls = DATA.works.map((w,i) => {
   card.appendChild(info);
   sticky.appendChild(card);
 
+  // modal (all images)
   const modalImgs = imgs.length
     ? `<div class="modal-imgs${imgs.length>1?' cols-2':''}">${imgs.map(u=>`<img src="${u}" alt="${w.name}" loading="lazy">`).join('')}</div>`
     : `<div class="modal-img-empty">[ add photo — paste jsDelivr URL into images: [] ]</div>`;
@@ -838,6 +827,7 @@ const cardEls = DATA.works.map((w,i) => {
   return card;
 });
 
+// GSAP animations
 cardEls.forEach((card,i) => { gsap.set(card,{scale:.86,opacity:0,zIndex:i+1}); });
 
 cardEls.forEach((card,i) => {
@@ -855,11 +845,14 @@ cardEls.forEach((card,i) => {
   .to(card,{scale:.92,opacity:0,ease:'power2.in',duration:.5});
 });
 
+// KEY FIX: pin WITH pinSpacing:true (default) so sections below get pushed correctly
 ScrollTrigger.create({
   trigger:track,
   start:'top top',
   end:()=>`+=${N*STEP}`,
   pin:sticky,
+  // pinSpacing defaults to true — GSAP adds padding so content below
+  // doesn't overlap the sticky area
 });
 
 function updateActive(i) {
@@ -867,9 +860,11 @@ function updateActive(i) {
   document.querySelectorAll('.pf-dot').forEach((d,j)=>d.classList.toggle('active',j===i));
 }
 
+// All skills
 document.getElementById('pf-all-skills').innerHTML =
   DATA.allSkills.map(s=>`<span class="pf-chip">${s}</span>`).join('');
 
+// Education
 const eduList = document.getElementById('edu-list');
 DATA.education.forEach(item => {
   const el = document.createElement('div');
@@ -878,6 +873,7 @@ DATA.education.forEach(item => {
   eduList.appendChild(el);
 });
 
+// Skills
 const skillsGrid = document.getElementById('skills-grid');
 DATA.skills.forEach(skill => {
   const el = document.createElement('span');
@@ -885,6 +881,7 @@ DATA.skills.forEach(skill => {
   skillsGrid.appendChild(el);
 });
 
+// Modals
 document.addEventListener('click', e => {
   const overlay = e.target.closest('.modal-overlay');
   if (overlay && (e.target===overlay || e.target.classList.contains('modal-close'))) { closeModals(); return; }
@@ -895,11 +892,13 @@ function closeModals() {
   document.body.style.overflow='';
 }
 
+// Scroll reveal
 const revealObs = new IntersectionObserver(entries => {
   entries.forEach(e=>{ if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);} });
 },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 
+// Resize
 window.addEventListener('resize',()=>{
   track.style.height=(N*STEP+window.innerHeight)+'px';
   ScrollTrigger.refresh();
