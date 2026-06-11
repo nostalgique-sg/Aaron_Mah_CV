@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nostalgique-sg.github.io/Aaron_Mah_CV/sitemap.xml
